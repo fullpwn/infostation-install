@@ -8,7 +8,7 @@ if [ $? -eq 0 ]; then
     rm -rf html
     rm -rf infostation-web
     sudo git clone https://github.com/fullpwn/infostation-web/
-    startx -nocursor
+    startx --nocursor
 else
-    startx -nocursor
+    startx --nnocursor
 fi
