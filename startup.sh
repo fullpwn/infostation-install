@@ -4,10 +4,8 @@ ping -c 1 8.8.8.8 > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
     echo "Connected to the internet"
-    cd /var/www/
-    rm -rf html
-    rm -rf infostation-web
-    sudo git clone https://github.com/fullpwn/infostation-web/
+    cd /var/www/infostation-web/
+    git pull
     startx
 else
     startx
